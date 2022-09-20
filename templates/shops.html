@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}
+    Shops
+{% endblock %}
+
+{% block main %}
+        <h1 class="hero-text col-lg-12" id="shop-head">Shop With Us</h1>
+        <div class="shop-body">
+            <div class="container-fluid" id="shop-1">
+              <a href="/sofas"><h1>Sofas</h1></a>
+              </div>
+            <div class="container-fluid" id="shop-2">
+              <a href="/chairs"><h1>Chairs</h1></a>
+              </div>   
+            <div class="container-fluid" id="shop-3">
+              <a href="/tables"><h1>Tables</h1></a>
+              </div>   
+            <div class="container-fluid" id="shop-4">
+              <a href="/shelves"><h1>Shelves</h1></a>
+              </div>   
+        </div>
+        <div><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=lagos nigeria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+       {% endblock %}

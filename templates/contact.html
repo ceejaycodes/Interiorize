@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact Us
+{% endblock %}
+
+{% block main %}
+        <div class="form">
+            <h1>Reach Out To Us!</h1>
+            <form action="/contact" method="post">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="input-email" placeholder="Name." name="name" required>
+                    <p></p>
+                </div>
+                <div class="mb-3">
+                    <textarea type="textarea" class="form-control" id="message-field" name="message" placeholder="type your message"required></textarea>
+                </div>
+                <button type="submit"  id="contact-btn">Submit</button>
+            </form>
+        </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sofas
+{% endblock %}
+
+{% block main %}
+<div>
+    <h1 class="forms-header">Sofas</h1>
+    <h1>Input a location and we will help you find the best places to buy!</h1>
+</div>
+<div class="forms">
+    <form action="/sofas" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="address" placeholder="Address" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Search
+          </button>
+    </form>
+</div>
+{% endblock %}

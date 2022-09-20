@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sofas
+{% endblock %}
+
+{% block main %}
+<p>{{locate.formatted}}</p>
+    <div class="result-body">
+        <table class="table">
+            <thead scope="col"><h1>You Can Find Sofas in <b>{{address}}</b> Here</h1></thead>
+            <tbody>
+                {% for re in locate %}
+                <tr>
+                    <td>
+                {{re["name"]}}
+                    </td>
+                    <td>
+                {{re["formatted"]}}
+                    </td>
+                </tr>
+                {%  endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

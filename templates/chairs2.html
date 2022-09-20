@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Chairs
+{% endblock %}
+
+{% block main %}
+    <div class="result-body">
+        <p></p>
+        <table class="table">
+            <thead scope="col"><h1>You Can Find Chairs in <b>{{address}}</b> Here</h1></thead>
+            <tbody>
+                {% for re in locate %}
+                <tr>
+                    <td>
+                {{re["name"]}}
+                    </td>
+                    <td>
+                {{re["formatted"]}}
+                    </td>
+                </tr>
+                {%  endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tables
+{% endblock %}
+
+{% block main %}
+<div>
+    <h1 class="forms-header"> Find Locations To Buy The Best Tables!</h1>
+</div>
+<div class="forms">
+    <form action="/tables" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="address" placeholder="Address" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Search
+          </button>
+    </form>
+</div>
+{% endblock %}

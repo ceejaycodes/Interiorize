@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<div>
+    <h1 class="forms-header">Login</h1>
+</div>
+<div class="forms">
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            submit
+          </button>
+    </form>
+</div>
+{% endblock %}

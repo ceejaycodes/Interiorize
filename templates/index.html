@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+        <!-- hero section -->
+        <div class="hero">
+            <h1 class="hero-text col-lg-6">Let Us Pick The Best <br>Decoration For Your <br> Home.</h1>
+            <img src="static/interiorize.jpeg" alt="hero-image" id="hero-image">
+        </div>
+        <div class="hero-btn">
+            <a href="/shops"><button id="hero-btn">Get Started</button></a>
+        </div>
+        <div class="second-header"> 
+            <h1>Our Services</h1>
+        </div>
+        <div class="section-1">
+            <span id="sectionbox-1">
+                <h1>Request a Ticket</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Totam quae ex consectetur consequatur voluptatibus<br>
+                    recusandae nam, architecto sequi commodi ab!</p>
+                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Click Here
+                      </button>
+            </span>
+            <span id="sectionbox-2">
+                <h1>Request a Ticket</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Totam quae ex consectetur consequatur voluptatibus<br>
+                    recusandae nam, architecto sequi commodi ab!</p>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Click Here
+                      </button>
+            </span>
+            <span id="sectionbox-3">
+                <h1>Request a Ticket</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Totam quae ex consectetur consequatur voluptatibus<br>
+                    recusandae nam, architecto sequi commodi ab!</p>
+                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Click Here
+                      </button>
+            </span>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Interiorize</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Were currently building and getting the best<br> resources to serve you better
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=lagos nigeria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+        </div>
+        {% endblock %}
